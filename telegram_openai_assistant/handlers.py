@@ -14,14 +14,14 @@ client = OpenAI(api_key=client_api_key)
 
 async def start(update: Update, context: CallbackContext) -> None:
     await context.bot.send_message(
-        chat_id=update.effective_chat.id, text="Hello! Ask me anything."
+        chat_id=update.effective_chat.id, text="¡Hola y bienvenido/a a nuestro servicio de asistencia médica virtual! 🏥 Mi nombre es MediBot, y estoy aquí para ayudarte a navegar por tus inquietudes de salud. 🩺 Puedo ofrecerte información general sobre síntomas, enfermedades, primeros auxilios y consejos de bienestar. Recuerda, soy un asistente virtual diseñado para brindar apoyo informativo y no puedo reemplazar una consulta médica profesional. 🚫 Si tienes una emergencia médica, te insto a que te pongas en contacto con servicios de emergencia locales 🚑 o visites a un médico. ¿Cómo puedo asistirte hoy? 🤖"
     )
 
 
 async def help_command(update: Update, context: CallbackContext) -> None:
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
-        text="Just send me a question and I'll try to answer it.",
+        text="🆘 Comando /help - ¡Estoy aquí para ayudarte! 🆘\n\n¿Necesitas una mano? ¡Has llegado al lugar correcto! Aquí te dejo una lista de los comandos que puedes usar para navegar por nuestro chatbot de asistencia médica:\n\n/start 🚀: Inicia una nueva conversación conmigo. ¡Dame un saludo inicial y te guiaré en lo que necesites!",
     )
 
 
